@@ -65,7 +65,7 @@ function winner(){
     })
 }
 
-rbtn.addEventListener("lclick",()=>{
+rbtn.addEventListener("click",()=>{
     currentPlayer="X"
     h1[0].innerText="Tic Tac Toe"
     boxes.forEach(item=>{
