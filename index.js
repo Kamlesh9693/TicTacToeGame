@@ -59,19 +59,18 @@ function winner(){
                 boxes[item[2]].classList.add("winnerClass")
                 count=0
                 h1[0].innerText= `winner is ${val1}`
-                ticTac.removeEventListener('click', eventStart )
+                ticTac.removeEventListener('click', gameStart() )
             }
         }
     })
 }
-
 rbtn.addEventListener("click",()=>{
     currentPlayer="X"
     h1[0].innerText="Tic Tac Toe"
     boxes.forEach(item=>{
         item.classList.remove("winnerClass")
         item.innerText=''
-    })
-
+        
+    })  
 })
 gameStart();
